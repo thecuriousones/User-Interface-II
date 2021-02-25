@@ -194,10 +194,10 @@ body{
       font-size: 62.5%;
     }
   
-  body{
+    body{
       width: 100%;
       margin: 0 auto;
-  }
+    }
     
     .container {
       width: 500px;
@@ -208,41 +208,58 @@ body{
       height: 33rem;
       width: 100%;
       background-color: rgba(224, 192, 8, 0.836);
-  }
+    }
 
-  h1 {
+    h1 {
       font-size: 5rem;
       padding-left: 1rem;
       padding-top: 3.1rem;
       font-family: 'Anton', sans-serif;
       text-align: center;
-  }
+    }
 
-  .nav-bar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-    align-content: space-evenly;
-  }
+    .nav-bar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     border: none;
+      background-color: transparent;
+      align-content: space-evenly;
+    }
 
-  .book {
-    padding: 1.2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    font-size: 2rem;
-    color: black;
-    border: 2px solid black;
-    background-color: whitesmoke;
-    margin-bottom: .5rem;
-    text-decoration: none;
-  }
+    .book {
+      padding: 1.2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      font-size: 2rem;
+      color: black;
+      border: 2px solid black;
+      background-color: whitesmoke;
+      margin-bottom: .5rem;
+      text-decoration: none;
+    }
 
-  .book2 {
-    padding-left: 4.6rem;
-    padding-right: 4.6rem;
-  }
+    .book2 {
+      padding-left: 4.6rem;
+      padding-right: 4.6rem;
+      }
+
+    .prettymuch {
+      flex-direction: column;
+      background-color: rgb(75, 70, 70);
+      max-width: 100%;
+    }
+
+    .logo-img {
+      width: 100%;
+      margin: 0 1rem;
+    }
+  
+    .logo-img img {
+      min-width: 100%;
+      border-radius: 12rem;
+    }
+
 
 
   }
