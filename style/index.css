@@ -202,6 +202,7 @@ body{
     .container {
       width: 500px;
       margin: 0 auto;
+      background-color:  rgb(75, 70, 70);
     }
 
     header {
@@ -209,6 +210,12 @@ body{
       width: 100%;
       background-color: rgba(224, 192, 8, 0.836);
     }
+
+    header div {
+      border: 1px solid black; 
+      padding: 1rem;
+      background-color: black;
+   }
 
     h1 {
       font-size: 5rem;
@@ -222,7 +229,7 @@ body{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-     border: none;
+      border: none;
       background-color: transparent;
       align-content: space-evenly;
     }
@@ -246,19 +253,66 @@ body{
 
     .prettymuch {
       flex-direction: column;
-      background-color: rgb(75, 70, 70);
+      background-color: transparent;
       max-width: 100%;
     }
 
     .logo-img {
       width: 100%;
-      margin: 0 1rem;
+      margin-top: 4rem;
+      margin-left: -.5rem;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
     }
   
     .logo-img img {
-      min-width: 100%;
-      border-radius: 12rem;
+      width: 100%;
+      border-radius: 0%;
+      object-fit: fill;
     }
+
+    .text {
+      margin-left: 15rem;
+      margin-right: 10rem;
+      margin-top: -5rem;
+      height: auto;
+      text-align: center;
+      /* background-color: rgb(75, 70, 70); */
+    }
+
+    .text button {
+      margin-left: 6rem;
+    }
+
+    .gallery {
+      justify-content: center;
+      align-content: center;
+    }
+
+    .gallery img {
+      height: 16rem;
+      width: 16rem;
+      margin: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    footer {
+      background-color: rgba(224, 192, 8, 0.836);
+      height: 10.5rem;
+    }
+
+    footer button {
+      background-color: whitesmoke;
+      border-radius: .5rem;
+      padding: .5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-weight: 600;
+    }
+
+
 
 
 
