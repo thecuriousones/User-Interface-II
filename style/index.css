@@ -1,1 +1,344 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  header {
+      height: 10rem;
+      width: 100%;
+      background-color: rgba(224, 192, 8, 0.836);
+  }
+
+  h1 {
+      font-size: 2.7rem;
+      padding-left: 1rem;
+      padding-top: 3.1rem;
+      font-family: 'Anton', sans-serif;
+  }
+
+  .nav-bar {
+    display: flex;
+    border: 3px solid black;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    background-color: black;
+  }
+
+  .book {
+    padding: .2rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    color: whitesmoke;
+  }
+
+
+  .about-me {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(75, 70, 70);
+  }
+
+  .logo-img {
+    height: 20rem;
+    width: 28rem;
+    margin: 1rem;
+  }
+
+  .logo-img img {
+      max-width: 77%;
+      height: auto;
+      border-radius: 12rem;
+  }
+
+  .text {
+    height: 20rem;
+    width: 25rem;
+    margin: 1rem;
+    margin-left: -2rem;
+  }
+
+  .text h2 {
+      margin-top: 6rem;
+      text-align: left;
+      font-size: 2.4rem;
+      font-family: 'Work Sans', sans-serif;
+
+  }
+
+  .text p {
+      text-align: left;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      font-family: 'Akaya Kanadaka', cursive;
+  }
+
+  .text button {
+      margin-top: 1rem;
+      text-align: left;
+      /* margin-left: 5rem; */
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+      background-color: black;
+      border-color: black;
+      text-shadow: 1px 1px black;
+      border-radius: .5rem;
+      padding: .2rem;
+      font-family: 'Work Sans', sans-serif;
+  }
+
+  .gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 100%;
+      height: 110%;
+
+  }
+
+  .gallery img {
+    height: 14.2rem;
+    width: 14.2rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    height: 10rem;
+    width: 100%;
+    background-color:  rgb(75, 70, 70);
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  footer h2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  footer div {
+     border: 1px solid black; 
+     padding: 1rem;
+     background-color: black;
+  }
+
+  @media (max-width: 800px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    body{
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      background-color:  rgb(75, 70, 70);
+    }
+
+    header {
+      height: 33rem;
+      width: 100%;
+      background-color: rgba(224, 192, 8, 0.836);
+    }
+
+    header div {
+      border: 1px solid black; 
+      padding: 1rem;
+      background-color: black;
+   }
+
+    h1 {
+      font-size: 5rem;
+      padding-left: 1rem;
+      padding-top: 3.1rem;
+      font-family: 'Anton', sans-serif;
+      text-align: center;
+    }
+
+    .nav-bar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      align-content: space-evenly;
+    }
+
+    .book {
+      padding: 1.2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      font-size: 2rem;
+      color: black;
+      border: 2px solid black;
+      background-color: whitesmoke;
+      margin-bottom: .5rem;
+      text-decoration: none;
+    }
+
+    .book2 {
+      padding-left: 4.6rem;
+      padding-right: 4.6rem;
+      }
+
+    .about-me {
+      flex-direction: column;
+      background-color: transparent;
+      max-width: 100%;
+    }
+
+    .logo-img {
+      width: 100%;
+      margin-top: 4rem;
+      margin-left: -.5rem;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .logo-img img {
+      width: 100%;
+      border-radius: 0%;
+      object-fit: fill;
+    }
+
+    .text {
+      margin-left: 15rem;
+      margin-right: 10rem;
+      margin-top: -5rem;
+      height: auto;
+      text-align: center;
+      /* background-color: rgb(75, 70, 70); */
+    }
+
+    .text button {
+      margin-left: 6rem;
+    }
+
+    .gallery {
+      justify-content: center;
+      align-content: center;
+    }
+
+    .gallery img {
+      height: 16rem;
+      width: 16rem;
+      margin: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    footer {
+      background-color: rgba(224, 192, 8, 0.836);
+      height: 10.5rem;
+    }
+
+    footer button {
+      background-color: whitesmoke;
+      border-radius: .5rem;
+      padding: .5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 500px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    body{
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .container {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .logo-img img {
+      margin-left: 1rem;
+    }
+
+    .text {
+      margin-left: 10rem;
+    }
+
+
+
+
+
+
+  }
